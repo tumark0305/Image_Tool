@@ -40,6 +40,6 @@ class Image_Tool:
                 if _file.lower().endswith(".nef"):
                     _input_path = f"{_input_dir}/{_sub_dir}/{_file}"
                     _file_name = os.path.splitext(_file)[0] + ".tiff"
-                    _output_path = f"{_output_dir}/{_sub_dir}/{_file_name}"
+                    _output_path = f"{_output_dir}/{_sub_dir}/{_file_name}" 
                     Image_Tool.NEF_convert_TIFF(_input_path,_output_path)
         return None
